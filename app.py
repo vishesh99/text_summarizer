@@ -40,7 +40,7 @@ def get_text_chunks(text):
     return docs
 
 def get_summary_chain():
-    model = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0.7)
+    model = ChatGoogleGenerativeAI(model="gemini-pro", temperature=0.7)
     chain = load_summarize_chain(model,chain_type="map_reduce")
     return chain
 
